@@ -82,7 +82,7 @@ $baseFontFamily: Podkova;
 
 .social li {
 	display:inline;
-	padding:7px;
+	padding:10px;
 }
 
 .about-me {
@@ -102,4 +102,18 @@ a {
 
 .me {
 	float:left;
+}
+
+.resume {
+	margin-top:100px;
+	margin-left:40px;
+	a {
+		color:#1589FF;
+	}
+}
+
+hr {
+	width:1000px;
+	color:black;
+	height:3px;
 }

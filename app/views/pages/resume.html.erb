@@ -1,2 +1,64 @@
-<h1>Pages#resume</h1>
-<p>Find me in app/views/pages/resume.html.erb</p>
+<%= render 'navbar' %>
+<div class="resume">
+<h2>Education</h2>
+<h3><%= link_to "Brandeis University", "http://www.brandeis.edu/", :target => "_blank" %></h3>
+<p>Waltham, MA | May 2012</p>
+<ul>
+	<li>Bachelor of Arts, Summa Cum Laude, 2012</li>
+	<li>Double major in International and Global Studies with Highest Honors and Business</li>
+</ul>
+<hr>
+
+<h2>Experience</h2>
+<h3>Analyst | <%= link_to "Sandbox Industries", "http://sandboxindustries.com/", :target => "_blank" %></h3>
+<p>San Francisco, CA | June 2012 - Present</p>
+<ul>
+	<li>Brainstorm, evaluate, and develop new business ideas for the Sandbox Foundry</li>
+	<li>Responsible for researching and testing ideas before they are assigned to a founder. Research includes industry and competitor analysis, market research, and landing page tests</li>
+</ul>
+
+<h3>Incubation Intern | <%= link_to "Sandbox Industries", "http://sandboxindustries.com/", :target => "_blank" %></h3>
+<p>Chicago, IL | Summer 2010 and Summer 2011</p>
+<ul>
+	<li>Researched and presented new business ideas to be funded by Sandbox</li>
+	<li>Launched and maintained intern blog to document Sandbox interns’ experiences to raise brand awareness; updated Facebook and Twitter pages daily, resulting in increased web traffic and clients </li>
+	<li>Conducted market research for several of Sandbox’s internal startups and created Google AdWords campaign</li>
+</ul>
+
+
+<h3>Communications Analyst | <%= link_to "Lab42", "http://lab42.com/", :target => "_blank" %></h3>
+<p>Chicago, IL | Summer 2011</p>
+<ul>
+	<li>Led marketing and PR for Lab42, a Sandbox portfolio company and market research startup utilizing social media to field surveys to clients’ target markets</li>
+	<li>Wrote weekly articles for the Lab42 blog, transforming its scope and web traffic</li>
+	<li>Pitched news editors and reporters on Lab42, resulting in press in The Huffington Post, AdWeek, The Atlantic and other prominent news websites, bringing hundreds of inquiries and many new clients to Lab42</li>
+	<li>Wrote surveys and analyzed data for PR infographics, visual representations of Lab42 market research data, which were featured on many notable news websites and resulted in new client leads </li>
+</ul>
+
+<h3>Marketing & Social Media Assistant | <%= link_to "Brandeis Graduate School of Arts & Sciences", "http://www.brandeis.edu/gsas/", :target => "_blank" %></h3>
+<p>Waltham, MA | September 2011 - September 2012</p>
+<ul>
+	<li>Update GSAS Facebook page daily with relevant articles and updates</li>
+	<li>Track and analyze results of GSAS Google AdWords campaigns using Google Analytics</li>
+</ul>
+
+<h3>Marketing Intern | <%= link_to "Grant Park Music Festival", "http://grantparkmusicfestival.com/", :target => "_blank" %></h3>
+<p>Chicago, IL | Summer 2009</p>
+<ul>
+	<li>Assisted in coordinating 31 outdoor summer concerts for nation’s only free, outdoor classical music series</li>
+	<li>Helped create and update the Festival’s newly designed website by working with branding company Jell Creative</li>
+	<li>Designed and wrote weekly email newsletters to Festival’s 8,000 contacts</li>
+</ul>
+
+<hr>
+
+<h2>Honors & Awards</h2>
+<ul>
+	<li>Kaplan Prize for Senior Honors Thesis, “Harry Potter and the Magic of Global Culture.”  Awarded to a thesis using an interdisciplinary approach to examine a core international concern, May 2012</li>
+	<li>Intercultural Leadership Award recipient. Chosen on the basis of essay and list of cultural integration experiences, Danish Institute for Study Abroad, May 2011</li>
+	<li>Brandeis University Dean’s List, 8 semesters, Fall 2008 – May 2012</li>
+</ul>
+</div>
+<br>
+<%= render 'social' %>
+<br>
