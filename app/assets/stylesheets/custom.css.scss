@@ -14,25 +14,37 @@ $baseFontFamily: Podkova;
 }
 
 .item {
-	height:500px;
 	position:relative;
+	height:400px;
+}
+
+.carousel .item {
+	height:400px;
 }
 
 .carousel-caption {
 	background-color:transparent;
-	position: static;
+	position: absolute;
 	max-width:550px;
 	padding:0 20px;
-	margin-top:200px;
 	right:0;
 	bottom:0;
 	left:0;
 	margin-left:75px;
+	margin-bottom:150px;
 }
 
 .carousel .container {
 	position:relative;
 	z-index:9;
+}
+
+.carousel img {
+	position:absolute;
+	top:0;
+	left:0;
+	min-width:100%;
+	height:400px;
 }
 
 .carousel-caption h1, .carousel-caption .lead {
@@ -54,6 +66,10 @@ $baseFontFamily: Podkova;
 .social {
 	margin:0 auto;
 	text-align:center;
+	a {
+		color:black;
+		font-size:110%;
+	}
 }
 
 .social ul {
@@ -64,4 +80,23 @@ $baseFontFamily: Podkova;
 .social li {
 	display:inline;
 	padding:7px;
+}
+
+.about-me {
+	max-width:none;
+	margin-bottom:200px;
+}
+.about-me h1 {
+	text-align:center;
+}
+
+a {
+	color:white;
+	&:hover {
+		color:#98AFC7;
+	}
+}
+
+.me {
+	float:left;
 }
