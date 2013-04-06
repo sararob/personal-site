@@ -1,0 +1,36 @@
+$baseFontFamily: Podkova;
+@import url(http://fonts.googleapis.com/css?family=Podkova);
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+.navbar-wrapper {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	z-index:10;
+	margin-top:20px;
+}
+
+.item {
+	height:500px;
+}
+
+.carousel-caption {
+	background-color:transparent;
+	position: static;
+	max-width:550px;
+	padding:0 20px;
+	margin-top:200px;
+	right:0;
+	bottom:0;
+	left:0;
+	margin-left:75px;
+}
+
+.carousel-caption h1, .carousel-caption .lead {
+	margin:0;
+	line-height:1.25;
+	color:black;
+}

@@ -1,4 +1,11 @@
 SaraRobinson::Application.routes.draw do
+  root :to => "pages#home"
+
+  get "pages/home"
+  get "about" => "pages#about"
+
+  get "resume" => "pages#resume"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

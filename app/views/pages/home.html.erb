@@ -1,0 +1,28 @@
+<%= render 'navbar' %>
+<div id="myCarousel" class="carousel slide">
+	<div class="carousel-inner">
+	    <div class="active item">
+				<div class="carousel-caption">
+					<h1>Hi, I'm Sara</h1>
+					<p class="lead">Something interesting here</p>
+				</div>
+			</div>
+	    <div class="item">
+				<div class="carousel-caption">
+					<h1>Clever headline</h1>
+					<p class="lead">I've lived in Nebraska, Chicago, 
+						<%= link_to "Copenhagen", "http://sarascopenblogen.wordpress.com/", :target => "_blank" %>, Boston, and now - San Francisco.</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="carousel-caption">
+					<h1>I love technology</h1>
+					<p class="lead">Ever 
+					<%= link_to "since I was young", "#" %>, I've been fascinated by technology.</p>
+				</div>
+			</div>
+	  </div>
+	  <!-- Carousel nav -->
+	  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	</div>
