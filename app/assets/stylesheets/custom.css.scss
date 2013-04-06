@@ -15,6 +15,7 @@ $baseFontFamily: Podkova;
 
 .item {
 	height:500px;
+	position:relative;
 }
 
 .carousel-caption {
@@ -27,6 +28,11 @@ $baseFontFamily: Podkova;
 	bottom:0;
 	left:0;
 	margin-left:75px;
+}
+
+.carousel .container {
+	position:relative;
+	z-index:9;
 }
 
 .carousel-caption h1, .carousel-caption .lead {
