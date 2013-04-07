@@ -4,6 +4,13 @@ $baseFontFamily: Podkova;
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+a {
+	color:white;
+	&:hover {
+		color:#98AFC7;
+	}
+}
+
 .navbar-wrapper {
 	position:absolute;
 	top:0;
@@ -53,6 +60,8 @@ $baseFontFamily: Podkova;
 	color:black;
 }
 
+/* Little me page */
+
 .littleme {
 	margin-left:20px;
 	margin-top:20px;
@@ -65,6 +74,8 @@ $baseFontFamily: Podkova;
 		color:#1589FF;
 	}
 }
+
+/* Social link footer */
 
 .social {
 	margin:0 auto;
@@ -85,24 +96,8 @@ $baseFontFamily: Podkova;
 	padding:10px;
 }
 
-.about-me {
-	max-width:none;
-	margin-bottom:200px;
-}
-.about-me h1 {
-	text-align:center;
-}
 
-a {
-	color:white;
-	&:hover {
-		color:#98AFC7;
-	}
-}
-
-.me {
-	float:left;
-}
+/* Resume */
 
 .resume {
 	margin-top:100px;
@@ -116,4 +111,42 @@ hr {
 	width:1000px;
 	color:black;
 	height:3px;
+}
+
+/* Coding projects */
+
+.projects li {
+	list-style-type:none;
+	padding:10px;
+	font-weight:bold;
+	font-size:110%;
+}
+
+.container-fluid {
+	margin-top:100px;
+	margin-left:40px;
+	a {
+		color:#1589FF;
+	}
+	
+	p {
+		font-size:120%;
+		a {
+			color:#6D2062;
+		}
+	}
+	h3 {
+		display:inline;
+		padding:5px;
+		a {
+			color:#00B6CB;
+		}
+	}
+	.span2 {
+		border-right:3px solid black;
+	}
+	.content {
+		display:none;
+	}
+	
 }

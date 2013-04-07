@@ -1,0 +1,104 @@
+<%= render 'navbar' %>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <ul class="projects">
+				<li>
+					<button id="ht">HackerTweets</button>
+				</li>
+				<li>
+					<button id="sf">SF Movies</button>
+				</li>
+				<li>
+					<button id="td">To Do</button>
+				</li>
+				<li>
+					<button id="code">Codecation</button>
+				</li>
+			</ul>
+    </div>
+    <div class="span10">
+      <div id="hackertweets" class="content">
+				<h3>
+					<%= link_to "HackerTweets", "http://hackertweets.herokuapp.com/", :target => "_blank" %>
+					|
+					<%= link_to "Source Code", "https://github.com/sararob/hackertweets", :target => "_blank" %>
+				</h3>
+				<br>
+				<br>
+				<p>
+					Uses the 
+					<%= link_to "Twitter API", "https://dev.twitter.com/docs/api/1.1", :target => "_blank" %>
+					to pull the latest tweets mentioning different programming languages. 
+				</p>
+			</div>
+			<div id="sfmovies" class="content">
+				<h3>
+					<%= link_to "SF Movies", "http://sfmovies.herokuapp.com/", :target => "_blank" %>
+					|
+					<%= link_to "Source Code", "https://github.com/sararob/sfmovies", :target => "_blank" %>
+				</h3>
+				<br>
+				<br>
+				<p>
+					Uses San Francisco's 
+						<%= link_to "open data", "https://data.sfgov.org/", :target => "_blank" %>
+						to provide information on famous movies filmed around San Francisco.
+				</p>
+			</div>
+			<div id="todo" class="content">
+				<h3>
+					<%= link_to "To Do", "http://sarastodo.herokuapp.com/", :target => "_blank" %>
+					|
+					<%= link_to "Source Code", "https://github.com/sararob/to_do", :target => "_blank" %>
+				</h3>
+				<br>
+				<br>
+				<p>
+					A simple to do list application.
+				</p>
+			</div>
+			<div id="codecation" class="content">
+				<h3>
+					<%= link_to "Codecation", "http://codecation.herokuapp.com/", :target => "_blank" %>
+					|
+					<%= link_to "Source Code", "https://github.com/sararob/codecation", :target => "_blank" %>
+				</h3>
+				<br>
+				<br>
+				<p>
+					A discussion forum for programming resources. My first Rails application!
+				</p>
+			</div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $('button#ht').click(function(){
+	     $('div#hackertweets').show();
+			 $('div#sfmovies').hide();
+			 $('div#todo').hide();
+			 $('div#codecation').hide();
+	   });
+		$('button#sf').click(function(){
+		     $('div#sfmovies').show();
+				 $('div#hackertweets').hide();
+				 $('div#todo').hide();
+				 $('div#codecation').hide();
+		   });
+	  $('button#td').click(function() {
+				$('div#todo').show();
+				$('div#sfmovies').hide();
+				$('div#hackertweets').hide();
+				$('div#codecation').hide();
+		});
+		$('button#code').click(function() {
+				$('div#codecation').show();
+				$('div#sfmovies').hide();
+				$('div#hackertweets').hide();
+				$('div#todo').hide();
+		});
+	});
+</script>

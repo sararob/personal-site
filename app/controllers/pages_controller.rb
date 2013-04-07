@@ -7,4 +7,7 @@ class PagesController < ApplicationController
   
   def littleme
   end
+  
+  def coding
+  end
 end

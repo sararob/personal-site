@@ -6,6 +6,7 @@ SaraRobinson::Application.routes.draw do
 
   get "resume" => "pages#resume"
   get "littleme" => "pages#littleme"
+  get "coding" => "pages#coding"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
