@@ -4,10 +4,10 @@
     <div class="span2">
       <ul class="projects">
 				<li>
-					<button id="ht">HackerTweets</button>
+					<button id="api">hapily</button>
 				</li>
 				<li>
-					<button id="sf">SF Movies</button>
+					<button id="ht">HackerTweets</button>
 				</li>
 				<li>
 					<button id="td">To Do</button>
@@ -32,18 +32,18 @@
 					to pull the latest tweets mentioning different programming languages. 
 				</p>
 			</div>
-			<div id="sfmovies" class="content">
+			<div id="hapily" class="content">
 				<h3>
-					<%= link_to "SF Movies", "http://sfmovies.herokuapp.com/", :target => "_blank" %>
+					<%= link_to "hapily", "http://hapily.herokuapp.com/", :target => "_blank" %>
 					|
-					<%= link_to "Source Code", "https://github.com/sararob/sfmovies", :target => "_blank" %>
+					<%= link_to "Source Code", "https://github.com/sararob/hapily", :target => "_blank" %>
 				</h3>
 				<br>
 				<br>
 				<p>
-					Uses San Francisco's 
-						<%= link_to "open data", "https://data.sfgov.org/", :target => "_blank" %>
-						to provide information on famous movies filmed around San Francisco.
+					A directory of
+					<%= link_to "APIs", "http://en.wikipedia.org/wiki/Application_programming_interface", :target => "_blank" %> 
+					where users can create an account, vote for their favorite API, view their votes on their profile page, and see all user's profiles. 
 				</p>
 			</div>
 			<div id="todo" class="content">
@@ -78,25 +78,25 @@
 $(document).ready(function() {
   $('button#ht').click(function(){
 	     $('div#hackertweets').show();
-			 $('div#sfmovies').hide();
+			 $('div#hapily').hide();
 			 $('div#todo').hide();
 			 $('div#codecation').hide();
 	   });
-		$('button#sf').click(function(){
-		     $('div#sfmovies').show();
+		$('button#api').click(function(){
+		     $('div#hapily').show();
 				 $('div#hackertweets').hide();
 				 $('div#todo').hide();
 				 $('div#codecation').hide();
 		   });
 	  $('button#td').click(function() {
 				$('div#todo').show();
-				$('div#sfmovies').hide();
+				$('div#hapily').hide();
 				$('div#hackertweets').hide();
 				$('div#codecation').hide();
 		});
 		$('button#code').click(function() {
 				$('div#codecation').show();
-				$('div#sfmovies').hide();
+				$('div#hapily').hide();
 				$('div#hackertweets').hide();
 				$('div#todo').hide();
 		});
