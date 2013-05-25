@@ -6,6 +6,9 @@
 				<li>
 					<button id="api">hapily</button>
 				</li>
+                <li>
+                  <button id="med">Medicare Data</button>
+                </li>
 				<li>
 					<button id="ht">HackerTweets</button>
 				</li>
@@ -18,6 +21,18 @@
 			</ul>
     </div>
     <div class="span10">
+      <div id="medicare" class="content">
+        <h3>
+          <%= link_to "Medicare Data", "http://medicare-data.herokuapp.com/app/index.html#/procedures", :target => "_blank" %>
+          |
+          <%= link_to "Source Code", "https://github.com/sararob/medicare-data", :target => "_blank" %>
+        </h3>
+        <br>
+        <br>
+        <p>
+          I'm building this site to learn <a href="http://angularjs.org/">AngularJS</a>. Using data from the <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/index.html" target="_blank">CMS</a>, this site provides information on the national average cost of the top 100 most frequently billed hospital discharges, and the amount covered by Medicare. It's a work in progress.
+        </p>
+      </div>
       <div id="hackertweets" class="content">
 				<h3>
 					<%= link_to "HackerTweets", "http://hackertweets.herokuapp.com/", :target => "_blank" %>
@@ -45,6 +60,7 @@
 					<%= link_to "APIs", "http://en.wikipedia.org/wiki/Application_programming_interface", :target => "_blank" %> 
 					where users can create an account, vote for their favorite API, view their votes on their profile page, and see all user's profiles. 
 				</p>
+              <div data-repo="sararob/hapily" class="github-box-wrap"></div>
 			</div>
 			<div id="todo" class="content">
 				<h3>
@@ -81,24 +97,37 @@ $(document).ready(function() {
 			 $('div#hapily').hide();
 			 $('div#todo').hide();
 			 $('div#codecation').hide();
+             $('div#medicare').hide()
 	   });
 		$('button#api').click(function(){
 		     $('div#hapily').show();
 				 $('div#hackertweets').hide();
 				 $('div#todo').hide();
 				 $('div#codecation').hide();
+            $('[data-repo]').github();
+            $('div#medicare').hide()
 		   });
 	  $('button#td').click(function() {
 				$('div#todo').show();
 				$('div#hapily').hide();
 				$('div#hackertweets').hide();
 				$('div#codecation').hide();
+                $('div#medicare').hide()
 		});
 		$('button#code').click(function() {
 				$('div#codecation').show();
 				$('div#hapily').hide();
 				$('div#hackertweets').hide();
 				$('div#todo').hide();
+                $('div#medicare').hide()
 		});
+    $('button#med').click(function() {
+        $('div#medicare').show()
+        $('div#codecation').hide();
+        $('div#hapily').hide();
+        $('div#hackertweets').hide();
+        $('div#todo').hide();
+    });
 	});
+
 </script>

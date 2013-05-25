@@ -1,17 +1,21 @@
-$baseFontFamily: Podkova;
-@import url(http://fonts.googleapis.com/css?family=Podkova);
+@font-face {
+  font-family: OpenSansRegular;
+  src: url('OpenSans-Regular.ttf');
+}
 
 @import "bootstrap";
 @import "bootstrap-responsive";
 
-a {
-	color:white;
-	&:hover {
-		color:#98AFC7;
-	}
+body {
+  font-family: OpenSansRegular;
+  a {
+    color:white;
+  }
 }
 
+
 .navbar-wrapper {
+    font-family: OpenSansRegular;
 	position:absolute;
 	top:0;
 	left:0;
@@ -39,6 +43,7 @@ a {
 	left:0;
 	margin-left:75px;
 	margin-bottom:150px;
+    font-family: OpenSansRegular;
 }
 
 .carousel .container {
