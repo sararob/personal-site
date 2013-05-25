@@ -113,6 +113,24 @@ body {
 	a {
 		color:#1589FF;
 	}
+    h2 {
+      color: #ff1493;
+      display: inline-block;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    #experience, #education, #awards {
+      display: none;
+    }
+    #aw, #ed, #exp {
+      text-decoration: none;
+      &:hover {
+        background-color: lightgrey;
+        padding: 15px;
+        padding-top: 20px;
+      }
+    }
 }
 
 hr {

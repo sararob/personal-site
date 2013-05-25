@@ -11,6 +11,15 @@
     };
 
 $(document).ready(function() {
+    $('#exp').click(function() {
+        $('#experience').slideToggle();
+    });
+    $('#ed').click(function() {
+        $('#education').slideToggle();
+    });
+    $('#aw').click(function() {
+        $('#awards').slideToggle();
+    });
     $('button#ht').click(function(){
         $('div#hackertweets').toggle();
         $('div#hapily').hide();
