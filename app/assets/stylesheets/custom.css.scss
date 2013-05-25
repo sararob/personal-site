@@ -116,20 +116,29 @@ body {
     h2 {
       color: #ff1493;
       display: inline-block;
+      a {
+      }
       &:hover {
         cursor: pointer;
       }
+    }
+    .down {
+      color: #ff1493;
+      margin-left: 12px;
     }
     #experience, #education, #awards {
       display: none;
     }
     #aw, #ed, #exp {
-      text-decoration: none;
       &:hover {
         background-color: lightgrey;
         padding: 15px;
         padding-top: 20px;
+        text-decoration: none;
       }
+    }
+    #awards {
+      margin-top: 15px;
     }
 }
 
