@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery-ui
 //= require jquery_ujs
+//= require lettering
+//= require textillate
 //= require bootstrap
 //= require bootstrap-dropdown
 //= require bootstrap-transition

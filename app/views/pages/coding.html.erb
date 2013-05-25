@@ -1,11 +1,17 @@
 <%= render 'navbar' %>
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span2">
+    <div class="span3">
       <ul class="projects">
 				<li>
 					<button id="api">hapily</button>
 				</li>
+                <li>
+                  <button id="event">Sandbox Event</button>
+                </li>
+                <li>
+                  <button id="fam">FamGram</button>
+                </li>
                 <li>
                   <button id="med">Medicare Data</button>
                 </li>
@@ -20,7 +26,31 @@
 				</li>
 			</ul>
     </div>
-    <div class="span10">
+    <div class="span9">
+      <div id="famgram" class="content">
+        <h3>
+          <%= link_to "FamGram", "http://famgram.co/", :target => "_blank" %>
+          |
+          <%= link_to "Source Code", "https://github.com/sararob/famgram", :target => "_blank" %>
+        </h3>
+        <br>
+        <br>
+        <p>
+           This landing page was used to test demand for a business concept created by Sandbox. The idea was to gather a family's social media photos and updates on a printed card to send to older family members every other week.
+        </p>
+      </div>
+      <div id="boxiversary" class="content">
+        <h3>
+          <%= link_to "Sandbox Anniversary Event", "http://boxiversary.herokuapp.com/", :target => "_blank" %>
+          |
+          <%= link_to "Source Code", "https://github.com/sararob/sbx-splash-page", :target => "_blank" %>
+        </h3>
+        <br>
+        <br>
+        <p>
+          Built an RSVP page for an upcoming<a href="http://sandboxindustries.com"> Sandbox Industries </a>anniversary event for investors and VIPs. Uses the <a href="http://apidocs.mailchimp.com/">Mailchimp API</a> to collect sign-ups.
+        </p>
+      </div>
       <div id="medicare" class="content">
         <h3>
           <%= link_to "Medicare Data", "http://medicare-data.herokuapp.com/app/index.html#/procedures", :target => "_blank" %>
@@ -48,7 +78,7 @@
 				</p>
 			</div>
 			<div id="hapily" class="content">
-				<h3>
+				<h3 class="tlt" data-in-effect="rollIn">
 					<%= link_to "hapily", "http://hapily.herokuapp.com/", :target => "_blank" %>
 					|
 					<%= link_to "Source Code", "https://github.com/sararob/hapily", :target => "_blank" %>
@@ -100,11 +130,10 @@ $(document).ready(function() {
              $('div#medicare').hide()
 	   });
 		$('button#api').click(function(){
-		     $('div#hapily').show();
-				 $('div#hackertweets').hide();
-				 $('div#todo').hide();
-				 $('div#codecation').hide();
-            $('[data-repo]').github();
+		    $('div#hapily').show();
+			$('div#hackertweets').hide();
+		    $('div#todo').hide();
+			$('div#codecation').hide();
             $('div#medicare').hide()
 		   });
 	  $('button#td').click(function() {

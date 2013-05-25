@@ -1,0 +1,17 @@
+/* Phone media queries */
+
+@media (max-width: 767px) {
+  .navbar-inner {
+    margin: 0px 40px;
+  }
+  .carousel-caption {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  #where, #tech {
+    margin-top: 150px;
+  }
+}
