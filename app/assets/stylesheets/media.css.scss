@@ -4,14 +4,8 @@
   .navbar-inner {
     margin: 0px 40px;
   }
-  .carousel-caption {
+  div#tech.carousel-caption {
     margin-left: 45px;
     margin-right: 45px;
-  }
-}
-
-@media (max-width: 480px) {
-  #where, #tech {
-    margin-top: 150px;
   }
 }
