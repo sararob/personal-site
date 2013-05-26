@@ -21,7 +21,7 @@ $(document).ready(function() {
         $('#awards').slideToggle();
     });
     $('button#ht').click(function(){
-        $('div#hackertweets').toggle();
+        $('div#hackertweets').show();
         $('div#hapily').hide();
         $('div#todo').hide();
         $('div#codecation').hide();
