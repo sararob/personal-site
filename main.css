@@ -1,0 +1,44 @@
+body {
+	font-family: "HelveticaNeue-UltraLight";
+}
+
+a {
+	color: #D87575;
+}
+
+a:hover {
+	color: #57BE85;
+	text-decoration: none;
+}
+
+#headshot {
+	border-radius: 100px;
+	width: 150px;
+	max-height: 100%;
+	margin: 20px;
+	display: inline-block;
+}
+
+#name {
+	display: inline-block;
+	margin-left: 60px;
+	color: #7BCED7;
+	font-size: 60px;
+}
+
+#bio {
+
+	margin: 10px 250px 0px 260px;
+	line-height: 1;
+/*	color: #7BCED7;*/
+}
+
+#bio .sect {
+	font-size: 38px;
+	letter-spacing: 1.5px;
+}
+
+#helvetica:hover {
+	font-family: "Helvetica Neue";
+	cursor: pointer;
+}
